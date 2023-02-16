@@ -11,5 +11,5 @@ int main(void)
 
 	puts(toPut);
 
-	return 0;
+	return (0);
 }
