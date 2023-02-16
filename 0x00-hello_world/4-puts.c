@@ -7,7 +7,7 @@
  */
 int main (void)
 {
-	char toPut[] = "Programming is like building a multilingual puzzle\n";
+	char toPut[] = "\"Programming is like building a multilingual puzzle\n";
 
 	puts(toPut);
 
