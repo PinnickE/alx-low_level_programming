@@ -11,13 +11,12 @@ int main(void)
 {
 	int ch = 'a';
 
-	do {
-		putchar(ch);
-
-		ch++;
-
-	} while (ch <= 'z' && ch != 'q' && ch != 'e');
-	continue
+	 while (ch <= 'z' && ch != 'q' && ch != 'e')
+	 {
+		puthcar(ch);
+		ch++
+		continue
+	 }
 
 	putchar('\n');
 
