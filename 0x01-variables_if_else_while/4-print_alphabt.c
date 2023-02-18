@@ -12,7 +12,7 @@ int main(void)
 	int ch = 'a';
 
 	do {
-		if (ch == 'q' || or ch == 'e')
+		if (ch == 'q' || ch == 'e')
 		{
 			ch++;
 			continue;
