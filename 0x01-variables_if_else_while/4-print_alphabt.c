@@ -18,7 +18,7 @@ int main(void)
 			continue;
 		}
 
-		puthcar(ch);
+		putchar(ch);
 		ch++
 	} while (ch <= 'z');
 
