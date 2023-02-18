@@ -10,13 +10,17 @@
 int main(void)
 {
 	int ch = 'a';
-       
-	while (ch <= 'z' && ch != 'q' && ch != 'e')
-	{
+
+	do {
+		if (ch == 'q' || or ch == 'e')
+		{
+			ch++;
+			continue;
+		}
+
 		puthcar(ch);
 		ch++
-		continue;
-       	}
+	} while (ch <= 'z');
 
 	putchar('\n');
 
