@@ -8,11 +8,14 @@
 
 int  main()
 {
-	char ch = 'a';
+	char
+
 	for(ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
-		putchar('\n');
 	}
+
+	putchar('\n');
+
 	return(0);
 }
