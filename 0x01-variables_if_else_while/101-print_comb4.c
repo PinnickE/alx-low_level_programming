@@ -17,20 +17,21 @@ int main(void)
         {
 		for (b = a + 1; b <= 9; b++)
                 {
-			for (c = b + 1; c <= 9; c++)
+			if (a != b)
 			{
-				if ((a != b) && (b != c))
-				{
-					putchar('0' + a);
-                               		putchar('0' + b);
-					putchar('0' + c);
-                       		 }
+				putchar('0' + a);
+				putchar('0' + b);
 			}
 
-                        putchar(',');
-                        putchar(' ');
-                }
-        }
+			for (c = b + 1; c <= 9; c++)
+			{
+				if((a != c) && (b != c))
+				{
+				putchar('0' + c)
+				}
+			}
+		}
+	}
 
         putchar('\n');
 
