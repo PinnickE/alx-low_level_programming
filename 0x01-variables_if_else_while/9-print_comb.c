@@ -11,9 +11,9 @@
 int main(void)
 {
 	int a = 0;
-	int b; 
 
 	do {
+		int b;
 		putchar('0' + a);
 			for (int b = 0; b <= 9; b++)
 			{
