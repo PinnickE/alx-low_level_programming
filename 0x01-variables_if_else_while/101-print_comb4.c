@@ -23,11 +23,11 @@ int main(void)
 
 			while (c < 10)
 			{
+				c++;
+			}
 				putchar('0' + a);
 				putchar('0' + b);
 				putchar('0' + c);
-				c++;
-			}
 		}
 	}
 	
