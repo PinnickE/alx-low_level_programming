@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Entry Point
@@ -13,22 +14,13 @@ int main(void)
 	int a = 0;
 
 	do {
-		int b;
 		putchar('0' + a);
-			for (int b = 0; b <= 9; b++)
-			{
-				putchar('0' + b);
 
-				if (a == 9)
-				{
-					a++;
-					b = 0;
-				}
-
-				putchar(',');
-				putchar(' ');
-			}
-
+		while (a < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 
 	} while (a <= 9);
 
