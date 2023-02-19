@@ -15,7 +15,6 @@ int main(void)
 
 	do {
 		putchar('0' + a);
-		a++;
 
 		if (a != 9)
 		{
@@ -23,7 +22,9 @@ int main(void)
 			putchar (' ');
 		}
 
-	} while (a <= 9);
+		a++
+
+	} while (a < 10);
 
 	return (0);
 }
