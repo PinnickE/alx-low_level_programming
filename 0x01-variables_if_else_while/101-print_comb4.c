@@ -9,28 +9,24 @@
 
 int main(void)
 {
-        int a;
-        int b;
-	int c;
+        int a = 0;
+        int b = 1;
+	int c = 2;
 
-        for (a = 0; a <= 9; a++)
-        {
-		for (b = a + 1; b <= 9; b++)
-                {
-			if (a != b)
+	while (a < 10)
+	{
+		while (b < 10)
+		{
+			while (c < 10)
 			{
 				putchar('0' + a);
 				putchar('0' + b);
-			}
-
-			for (c = b + 1; c <= 9; c++)
-			{
-				if((a != c) && (b != c))
-				{
 				putchar('0' + c);
-				}
+				c++;
 			}
+			b++;
 		}
+		a++;
 	}
 
         putchar('\n');
