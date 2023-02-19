@@ -27,7 +27,7 @@ int main(void)
 			{
 				if((a != c) && (b != c))
 				{
-				putchar('0' + c)
+				putchar('0' + c);
 				}
 			}
 		}
