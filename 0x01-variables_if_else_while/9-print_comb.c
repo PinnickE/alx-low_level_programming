@@ -26,5 +26,7 @@ int main(void)
 
 	} while (a < 10);
 
+	putchar('\n');
+
 	return (0);
 }
