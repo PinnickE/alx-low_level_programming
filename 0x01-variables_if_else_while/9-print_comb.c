@@ -22,7 +22,7 @@ int main(void)
 			putchar (' ');
 		}
 
-		a++
+		a++;
 
 	} while (a < 10);
 
