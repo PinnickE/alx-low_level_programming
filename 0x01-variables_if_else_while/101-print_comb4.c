@@ -9,14 +9,18 @@
 
 int main(void)
 {
-        int a = 0;
-        int b = 1;
-	int c = 2;
+        int a = -1;
+        int b = 0;
+	int c = 1;
 
 	while (a < 10)
 	{
+		a++;
+
 		while (b < 10)
 		{
+			b++;
+
 			while (c < 10)
 			{
 				putchar('0' + a);
@@ -24,13 +28,11 @@ int main(void)
 				putchar('0' + c);
 				c++;
 			}
-			b++;
 		}
-		a++;
 	}
-
-        putchar('\n');
-
-        return (0);
+	
+	putchar('\n');
+	
+	return (0);
 
 }
