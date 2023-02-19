@@ -17,7 +17,7 @@ int main(void)
 		putchar('0' + dig);
 	}
 
-	for (lett = 'a'; lett <= 'e'; lett++)
+	for (lett = 'a'; lett <= 'f'; lett++)
 	{
 		putchar(lett);
 	}
