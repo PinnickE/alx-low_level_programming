@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry Point
@@ -22,6 +23,9 @@ int main(void)
 					a++;
 					b = 0;
 				}
+
+				putchar(',');
+				putchar(' ');
 			}
 
 
