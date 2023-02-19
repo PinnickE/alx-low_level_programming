@@ -16,10 +16,10 @@ int main(void)
 	{
 		for (b = a + 1; b <= 9; b++)
 		{
-			if ( a !=b)
+			if (a != b)
 			{
-				putchar(a);
-				putchar(b);
+				putchar('0' + a);
+				putchar('0' + b);
 			}
 			
 			putchar(',');
