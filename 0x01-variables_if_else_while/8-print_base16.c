@@ -19,7 +19,7 @@ int main(void)
 
 	for (lett = 'a'; lett <= 'e'; lett++)
 	{
-		puthcar(lett);
+		putchar(lett);
 	}
 
 	putchar('\n');
