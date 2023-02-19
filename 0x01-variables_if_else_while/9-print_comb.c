@@ -15,7 +15,7 @@ int main(void)
 
 	do {
 		putchar('0' + a);
-		a++
+		a++;
 	} while (a <= 9);
 	
 	if (a < 9)
