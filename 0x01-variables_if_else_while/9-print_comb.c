@@ -16,13 +16,14 @@ int main(void)
 	do {
 		putchar('0' + a);
 		a++;
+
+		if (a < 9)
+		{
+			putchar (',');
+			putchar (' ');
+		}
+
 	} while (a <= 9);
-	
-	if (a < 9)
-	{
-	       	putchar(',');
-	       	putchar(' ');
-	}
 
 	return (0);
 }
