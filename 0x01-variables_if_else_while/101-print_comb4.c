@@ -19,7 +19,7 @@ int main(void)
                 {
 			for (c = b + 1; c <= 9; c++)
 			{
-				if ((a != )b && (b != c))
+				if ((a != b) && (b != c))
 				{
 					putchar('0' + a);
                                		putchar('0' + b);
