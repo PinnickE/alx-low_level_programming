@@ -9,12 +9,17 @@
 
 int main(void)
 {
-	int hex;
+	int dig;
+	char lett;
 
-	for (hex = 0; hex <= 16; hex++)
+	for (dig = 0; dig < 10; dig++)
 	{
-		hex = scanf("%x", &hex);
-		putchar('0' + hex);
+		putchar('0' + dig);
+	}
+
+	for (lett = 'a'; lett <= 'e'; lett++)
+	{
+		puthcar(lett);
 	}
 
 	putchar('\n');
