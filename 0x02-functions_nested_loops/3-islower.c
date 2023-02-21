@@ -3,7 +3,7 @@
 /**
  * _islower - check for lowercase letters
  *
- * int c -  entry point
+ * @c: entry point
  *
  * Return: 0 (Success)
  */
