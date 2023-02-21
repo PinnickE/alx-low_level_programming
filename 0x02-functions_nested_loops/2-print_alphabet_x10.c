@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 {
 	int cntr = 0;
 
-	while (cntr <= 10)
+	while (cntr < 10)
 	{
 		int ltr;
 
@@ -21,7 +21,6 @@ void print_alphabet_x10(void)
 
 		}
 			_putchar('\n');
-		
 	cntr++;
 	}
 }
