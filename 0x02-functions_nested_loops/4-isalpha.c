@@ -3,6 +3,8 @@
 /**
  * _isalpha - checks if character is an alphabet
  *
+ * @c: 1st operand
+ *
  * Return: 0
  *
  */
