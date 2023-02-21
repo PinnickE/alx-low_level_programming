@@ -3,7 +3,9 @@
 /**
  * _islower - check for lowercase letters
  *
- * Return: 0
+ * int c -  entry point
+ *
+ * Return: 0 (Success)
  */
 
 int _islower(int c)
