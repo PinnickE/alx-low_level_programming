@@ -22,12 +22,12 @@ void print_to_98(int n)
 			n++;
 		} while (n < 98);
 
-		printf("%d ", g);
+		puts(g);
 	}
 
 	else if (n == 98)
 	{
-		printf("%d ", n);
+		puts(n);
 	}
 
 	else
@@ -37,6 +37,6 @@ void print_to_98(int n)
 			n--;
 		} while (n > g);
 
-		printf("%d ", n);
+		puts(n);
 	}
 }
