@@ -18,29 +18,29 @@ void print_to_98(int n)
 	if (n < 98)
 	{
 		do {
-			printf(n);
-			printf(',');
-			printf(' ');
+			printf("%d", n);
+			printf(44);
+			printf(32);
 			n++;
 		} while (n < 98);
 
-		printf(g);
+		printf("%d", g);
 	}
 
 	else if (n == 98)
 	{
-		printf(n);
+		printf("%d", n);
 	}
 
 	else
 	{
 		do {
-			printf(g);
-			printf(',');
-			printf(' ');
+			printf("%d", g);
+			printf(44);
+			printf(32);
 			g--;
 		} while (g > n);
 
-		printf(n);
+		printf("%d", n);
 	}
 }
