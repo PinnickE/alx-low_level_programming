@@ -21,15 +21,17 @@ void times_table(void)
 			_putchar(44);
 			_putchar(32);
 
-			z = y * x;
-			
+			z = x * y;
+
 			if (z <= 9)
 			{
 				_putchar(32);
 			}
 			else
+			{
 				_putchar((z / 10) + 0);
-
+			}
+			
 			_putchar((z % 10) + '0');
 		}
 
