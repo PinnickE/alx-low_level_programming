@@ -3,13 +3,14 @@
 /**
  * add - add two integers
  *
- * @int: first integer
+ * @a: first integer
+ * @b: second integer
  *
  * Return: 0
  *
  */
 
-int add(int, int)
+int add(int a, int b)
 {
 	int a;
 	int b;
@@ -17,5 +18,5 @@ int add(int, int)
 
 	c = a + b;
 
-	_putchar(c + '0')';
+	_putchar(c + '0');
 }
