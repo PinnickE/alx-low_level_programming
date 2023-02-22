@@ -3,7 +3,7 @@
 /**
  * _abs - Compute the absolute value of an integer
  *
- * @int: The number to parse
+ * @x: The number to parse
  *
  * Return: 0
  */
