@@ -17,24 +17,29 @@ void print_to_98(int n)
 	if (n < 98)
 	{
 		do {
-			_putchar(n);
+			_putchar('0' + n);
 			_putchar(',');
 			_putchar(' ');
 			n++;
 		} while (n < 98);
 
-		_putchar(g);
+		_putchar('0' + g);
+	}
+
+	else if (n == 98) 
+	{
+		_putchar('0' + n);
 	}
 
 	else
 	{
 		do {
-			_putchar(g);
+			_putchar('0' + g);
 			_putchar(',');
 			_putchar(' ');
 			g--;
 		} while (g > n);
 
-		_putchar(n);
+		_putchar('0' + n);
 	}
 }
