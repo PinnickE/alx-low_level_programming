@@ -18,9 +18,7 @@ void print_to_98(int n)
 	if (n < 98)
 	{
 		do {
-			printf("%d", n);
-			printf(44);
-			printf(32);
+			printf("%d, ", n);
 			n++;
 		} while (n < 98);
 
@@ -35,9 +33,7 @@ void print_to_98(int n)
 	else
 	{
 		do {
-			printf("%d", g);
-			printf(44);
-			printf(32);
+			printf("%d, ", g);
 			g--;
 		} while (g > n);
 
