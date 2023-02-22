@@ -22,21 +22,21 @@ void print_to_98(int n)
 			n++;
 		} while (n < 98);
 
-		printf("%d", g);
+		printf("%d ", g);
 	}
 
 	else if (n == 98)
 	{
-		printf("%d", n);
+		printf("%d ", n);
 	}
 
-	else
+	else if
 	{
 		do {
-			printf("%d, ", g);
-			g--;
-		} while (g > n);
+			printf("%d, ", n);
+			n--;
+		} while (n > g);
 
-		printf("%d", n);
+		printf("%d ", n);
 	}
 }
