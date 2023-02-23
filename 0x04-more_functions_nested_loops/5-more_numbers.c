@@ -11,7 +11,7 @@ void more_numbers(void)
 {
 	char count1, count2;
 
-	for (count1 = '0'; count1 <= '10'; count1++)
+	for (count1 = '0'; count1 < '10'; count1++)
 	{
 		for (count2 = '0'; count2 <= '14'; count2++)
 		{
