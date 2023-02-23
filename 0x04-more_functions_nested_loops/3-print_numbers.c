@@ -3,14 +3,14 @@
 /**
  * print_numbers - print numbers from 0 to 9
  *
- * Return: 0
+ * Return: void
  */
 
 void print_numbers(void)
 {
 	char count;
 
-	for (count = 48; count <= 57; count++)
+	for (count = '0'; count <= '9'; count++)
 	{
 		_putchar(count);
 	}
