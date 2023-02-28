@@ -31,4 +31,6 @@ void puts_half(char *str)
 	{
 		_putchar(str[count]);
 	}
+
+	_putchar('\n');
 }
