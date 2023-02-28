@@ -16,16 +16,15 @@ void puts_half(char *str)
 	while (str[i] != '\0')
 	{
 		i++;
-		str++;
 	}
 
 	if (i % 2 == 1)
 	{
-		j = ((i - 1) / 2 + '0');
+		j = (i - 1) / 2;
 	}
 	else
 	{
-		j = (i / 2) + '0';
+		j = (i / 2);
 	}
 
 	for (count = j; count < i; count++)
