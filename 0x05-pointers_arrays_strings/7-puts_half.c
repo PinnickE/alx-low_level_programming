@@ -21,11 +21,11 @@ void puts_half(char *str)
 
 	if (i % 2 == 1)
 	{
-		j = (i - 1) / 2;
+		j = ((i - 1) / 2 + '0');
 	}
 	else
 	{
-		j = i / 2;
+		j = (i / 2) + '0';
 	}
 
 	for (count = j; count < i; count++)
