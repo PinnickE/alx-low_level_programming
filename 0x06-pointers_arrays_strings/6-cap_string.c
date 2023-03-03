@@ -12,7 +12,7 @@ char *cap_string(char *a)
 {
 	int n = 0;
 
-	while (a[n])
+	while (a[n] != '\0')
 	{
 		while (!(a[n] > 96 && a[n] < 123))
 		{
