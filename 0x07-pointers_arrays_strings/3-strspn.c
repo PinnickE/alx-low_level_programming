@@ -23,11 +23,16 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			for (cnt2 = 0; accept[cnt2] != '\0'; cnt2++)
 			{
-				if (s[cnt2] == accept[cnt1])
+				if (s[cnt1] == accept[cnt2])
 				{
 					l++;
 				}
 			}
+		}
+
+		else
+		{
+			return (l);
 		}
 
 	}
