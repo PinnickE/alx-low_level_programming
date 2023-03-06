@@ -15,28 +15,24 @@
 char *_strpbrk(char *s, char *accept)
 {
 	char *new = 0;
-	int cnt1;
-	int cnt2;
 
 	if (!s || !accept)
 	{
 		return (NULL);
 	}
 
-	for (cnt1 = 0; s[cnt1] != '\0'; cnt1++)
+	while (*s != '\0')
 	{
-		for (cnt2 = 0; accept[cnt2] != '\0'; cnt2++)
+		while (*accept != '\0')
 		{
-			if (s[cnt1] == accept[cnt2])
+			if (*s == *accept)
 			{
-				while (accept[cnt2])
-				{
-					new = new + *s;
-				}
-			return (new);
+				return (new + *s);
 			}
+
+			accept++;
 		}
 	}
-	
-	return (NULL);	
+
+	return (NULL);
 }
