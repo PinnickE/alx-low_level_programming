@@ -14,6 +14,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	int cnt;
 
 	if (!s || !accept)
 	{
@@ -22,14 +23,14 @@ char *_strpbrk(char *s, char *accept)
 
 	while (*s != '\0')
 	{
-		while (*accept != '\0')
+		for (cnt = 0; accept[cnt] != '\0'; cnt++)
 		{
-			if (*s == *accept)
+			if (*s == accept[cnt])
 			{
 				return (s);
 			}
 
-			accept++;
+			s++;
 		}
 	}
 
