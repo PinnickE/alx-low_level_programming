@@ -46,7 +46,7 @@ char *_strstr(char *haystack, char *needle)
 
 		if (b == cnt2)
 		{
-			return (needle);
+			return (haystack + a + b);
 		}
 	}
 
