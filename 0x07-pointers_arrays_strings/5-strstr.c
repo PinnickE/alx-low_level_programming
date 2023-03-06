@@ -13,22 +13,40 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int cnt1;
-	int cnt2;
+	int cnt1 = 0;
+	int cnt2 = 0;
+	int a;
 
 	if (!needle || !haystack)
 	{
 		return (NULL);
 	}
 
-	for (cnt1 = 0; haystack[cnt1] != '\0'; cnt1++)
+	while (haystack[cnt1] != '\0')
 	{
-		for (cnt2 = 0; needle[cnt2] != '\0'; cnt2++)
+		cnt1++;
+	}
+
+	while (needle[cnt2] != '\0')
+	{
+		cnt2++;
+	}
+
+	for (a = 0; a <= cnt1 - cnt2; a++)
+	{
+		int b;
+
+		for (b = 0; b < cnt2; b++)
 		{
-			if (haystack[cnt1 + cnt2] == needle[cnt2])
+			if (haystack[a + b] != needle[b])
 			{
-				return (haystack + (cnt1 + cnt2));
+				break;
 			}
+		}
+
+		if (b == cnt2)
+		{
+			return (haystack);
 		}
 	}
 
