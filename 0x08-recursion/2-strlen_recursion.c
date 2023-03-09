@@ -9,10 +9,7 @@
  *
  */
 
-increase(n)
-{
-	return (n++);
-}
+
 int _strlen_recursion(char *s)
 {
 	int i = 0;
@@ -23,9 +20,8 @@ int _strlen_recursion(char *s)
 	}
 	else
 	{
-		increase(i);
-		_strlen_recursion(s++);
 		s++;
+		return (1 + _strlen_recursion(s));
 	}
 
 	return (i);
