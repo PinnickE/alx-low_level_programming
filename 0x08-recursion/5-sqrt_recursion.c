@@ -4,10 +4,6 @@
  * _sqrt_recursion - Return natural square root
  * of a number
  *
- * root - New function to check possible roots
- *
- * @x: Possible roots to check
- *
  * @n: Number to parse
  *
  * Return: Result
@@ -21,6 +17,11 @@ int _sqrt_recursion(int n)
 	return (root(n, 1));
 }
 
+/**
+ * root - New function to check possible roots
+ *
+ * @x: Possible roots to check
+ */
 int root(int n, int x)
 {
 	if (x * x == n)
