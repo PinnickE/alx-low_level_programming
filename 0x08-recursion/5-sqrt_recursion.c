@@ -20,7 +20,11 @@ int _sqrt_recursion(int n)
 /**
  * root - New function to check possible roots
  *
+ * @n: Number to check
+ *
  * @x: Possible roots to check
+ *
+ * Return: Result
  */
 int root(int n, int x)
 {
