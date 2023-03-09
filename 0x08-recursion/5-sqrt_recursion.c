@@ -10,14 +10,25 @@
  *
  */
 
+int root(int n, int x);
+
 int _sqrt_recursion(int n)
 {
-	if (n == (n - 1 * n - 1))
+	return (root(n, 1));
+}
+
+int root(int n, int x)
+{
+	if (x * x == n)
 	{
-		return (n - 1);
+		return (x);
+	}
+	else if (x * x > n)
+	{
+		return (-1);
 	}
 	else
 	{
-		return (_sqrt_recursion(n - 1));
+		return (root(n, (x + 1)));
 	}
 }
