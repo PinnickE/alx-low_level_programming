@@ -4,6 +4,10 @@
  * _sqrt_recursion - Return natural square root
  * of a number
  *
+ * root - New function to check possible roots
+ *
+ * @x: Possible roots to check
+ *
  * @n: Number to parse
  *
  * Return: Result
