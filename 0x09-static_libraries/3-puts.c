@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void _puts(char *s)
 {
 	char toPut[] = "\"Programming is like building a multilingual puzzle";
 
