@@ -14,19 +14,19 @@
 int main(int argc, char *argv[])
 {
 	int multi = 0;
-	int first = atoi(argv[1]);
-	int second = atoi(argv[2]);
-
-	if (argc == 3)
+	int first, second;
+	char message[] = "Error";
+	
+	if (argc != 3)
 	{
-		multi = first * second;
-		printf("%d\n", multi);
-		return (0);
-	}
-
-	else
-	{
-		printf("%s\n", "Error");
+		puts(message);
 		return (1);
 	}
+	
+	first = atoi(argv[1]);
+	second = atoi(argv[2]);
+	
+	multi = first * second;
+	printf("%d\n", multi);
+	return (0);
 }
