@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		{
 			if (argv[b][c] < 48 || argv[b][c] > 57)
 			{
-				puts("Error");
+				printf("%s\n", "Error");
 				return (1);
 			}
 			c++;
