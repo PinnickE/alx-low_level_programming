@@ -14,9 +14,9 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int a, b, x;
 	int c = 0;
-	int result = 0;
+	int sum = 0;
 
 	if (argc == 1)
 	{
@@ -37,9 +37,10 @@ int main(int argc, char *argv[])
 
 	for (a = 1; a < argc; a++)
 	{
-		result += atoi(argv[a]);
+		x = atoi(argv[a]);
+		sum += x;
 	}
 
-	printf("%d\n", result);
+	printf("%d\n", sum);
 	return (0);
 }
