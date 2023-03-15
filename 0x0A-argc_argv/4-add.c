@@ -22,24 +22,27 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	for (b = 1; b < argc; b++)
+	else
 	{
-		for (c = 0; argv[b][c] != '\0'; c++)
+		for (b = 1; b < argc; b++)
 		{
-			if (argv[b][c] < 48 || argv[b][c] > 57)
+			for (c = 0; argv[b][c] != '\0'; c++)
 			{
-				printf("%s\n", "Error");
-				return (1);
+				if (argv[b][c] < 48 || argv[b][c] > 57)
+				{
+					printf("%s\n", "Error");
+					return (1);
+				}
 			}
 		}
+		for (a = 1; a < argc; a++)
+		{
+			x = atoi(argv[a]);
+			sum += x;
+		}
+		
+		printf("%d\n", sum);
 	}
 
-	for (a = 1; a < argc; a++)
-	{
-		x = atoi(argv[a]);
-		sum += x;
-	}
-
-	printf("%d\n", sum);
 	return (0);
 }
