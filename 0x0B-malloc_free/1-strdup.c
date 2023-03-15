@@ -33,11 +33,19 @@ char *_strdup(char *str)
 
 	a = 0;
 
-	while (*(str + a) != '\0')
+	if (ptr == NULL)
 	{
-		*(ptr + a) = *(str + a);
+		return (NULL);
+	}
 
-		a++;
+	else
+	{
+		while (*(str + a) != '\0')
+		{
+			*(ptr + a) = *(str + a);
+
+			a++;
+		}
 	}
 
 	return (ptr);
