@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
 	for (a = 0; a < argc; a++)
 	{
 		result += atoi(argv[a]);
-		printf("%d\n", result);
 	}
 
+	printf("%d\n", result);
 	return (0);
 }
