@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	for (b = 0; b < argc; b++)
+	for (b = 1; b < argc; b++)
 	{
 		while (argv[b][c] != '\0')
 		{
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (a = 0; a < argc; a++)
+	for (a = 1; a < argc; a++)
 	{
 		result += atoi(argv[a]);
 	}
