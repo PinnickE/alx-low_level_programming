@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 			x = atoi(argv[a]);
 			sum += x;
 		}
-		
+
 		printf("%d\n", sum);
 	}
 
