@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 	{
-		return (NULL);
+		return ("");
 	}
 	if (s1 == NULL)
 	{
@@ -29,7 +29,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-
 	cnt1 = 0;
 	while (s1[cnt1] != '\0')
 	{
