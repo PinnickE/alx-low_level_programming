@@ -49,5 +49,7 @@ char *str_concat(char *s1, char *s2)
 		*(ptr + cnt1 + b) = *(s2 + b);
 		b++;
 	}
+	free (s1);
+	free (s2);
 	return (ptr);
 }
