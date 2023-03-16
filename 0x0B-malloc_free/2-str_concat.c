@@ -42,13 +42,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	a = 0;
+	a = b = 0;
 	while (*(s1 + a) != '\0')
 	{
 		*(ptr + a) = *(s1 + a);
 		a++;
 	}
-	b = 0;
 	while (*(s2 + b) != '\0')
 	{
 		*(ptr + cnt1 + b) = *(s2 + b);
