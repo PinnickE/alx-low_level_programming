@@ -22,32 +22,32 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	cnt1 = 0;
-
-	while (s1[cnt1] != '\0')
+	if (s1 != NULL)
 	{
-		cnt1++;
+		cnt1 = 0;
+		while (s1[cnt1] != '\0')
+		{
+			cnt1++;
+		}
 	}
 
-	cnt2 = 0;
-
-	while (s2[cnt2] != '\0')
+	if (s2 != NULL)
 	{
-		cnt2++;
+		cnt2 = 0;
+		while (s2[cnt2] != '\0')
+		{
+			cnt2++;
+		}
 	}
-
-	ptr = malloc(sizeof(char) * (cnt1 + cnt2 + 1));
+	ptr = (char *) malloc(sizeof(char) * (cnt1 + cnt2 + 1));
 
 	a = 0;
-
 	while (*(s1 + a) != '\0')
 	{
 		*(ptr + a) = *(s1 + a);
 		a++;
 	}
-
 	b = 0;
-
 	while (*(s2 + b) != '\0')
 	{
 		*(ptr + cnt1 + b) = *(s2 + b);
