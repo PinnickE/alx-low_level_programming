@@ -40,7 +40,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		cnt2++;
 	}
 
-	ptr = malloc(sizeof(char) * (cnt1 + n + 1));
+	if (n < cnt2)
+	{
+		ptr = malloc(sizeof(char) * (cnt1 + n + 1));
+	}
+	else
+	{
+		ptr = malloc(sizeof(char) * (cnt1 + cnt2 + 1));
+	}
 	if (ptr == NULL)
 	{
 		return (NULL);
@@ -50,11 +57,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		*(ptr + a) = *(s1 + a);
 		a++;
-	}
-
-	if (cnt2 > n)
-	{
-		cnt2 = n;
 	}
 
 	for (b = 0; b < n; b++)
