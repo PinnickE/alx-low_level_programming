@@ -52,10 +52,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		a++;
 	}
 
-	while (b < n && *(s2 + b) != '\0')
+	if (cnt2 > n)
+	{
+		cnt2 = n;
+	}
+
+	for (b = 0; b < n; b++)
 	{
 		*(ptr + cnt1 + b) = *(s2 + b);
-		b++;
 	}
 
 	return (ptr);
