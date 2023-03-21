@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -14,7 +15,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	unsinged int len1, len2, cntr;
+	unsigned int len1, len2, cntr;
 
 	dog_t *dog;
 
@@ -54,7 +55,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			len2++;
 		}
 
-		*(dog).owner = malloc(sizeof(char) * len2);
+		(*dog).owner = malloc(sizeof(char) * len2);
 
 		if ((*dog).owner == NULL)
 		{
