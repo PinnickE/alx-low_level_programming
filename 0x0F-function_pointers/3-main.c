@@ -4,7 +4,7 @@
 #include "function_pointers.h"
 
 /**
- * main - Print function results
+ * main - Print operation results
  *
  * @argc: Total arguments provided
  * @argv: Array containing arguments
@@ -15,8 +15,7 @@
 int main(int __attribute__((unused)) argc, char *argv[])
 {
 	char *op;
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
+	int a, b;
 
 	if (argc != 4)
 	{
@@ -25,6 +24,8 @@ int main(int __attribute__((unused)) argc, char *argv[])
 	}
 
 	op = argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
