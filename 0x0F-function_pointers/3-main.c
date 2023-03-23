@@ -25,7 +25,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
 	}
 
 	op = argv[2];
-	
+
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("%s\n", "Error");
