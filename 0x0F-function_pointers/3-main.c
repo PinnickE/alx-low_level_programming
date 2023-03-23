@@ -33,7 +33,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
 		exit(99);
 	}
 
-	if ((b == 48 && *argv[2] == 37) || (b == 48 && *argv[2] == 47))
+	if ((b == 48 && *op == 37) || (b == 48 && *op == 47))
 	{
 		printf("%s\n", "Error");
 		exit(100);
