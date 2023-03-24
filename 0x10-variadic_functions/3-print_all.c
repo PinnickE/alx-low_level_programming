@@ -17,7 +17,6 @@ void print_all(const char * const format, ...)
 	char *s;
 
 	va_start(all, format);
-
 	if (format != NULL)
 	{
 		while (format[cntr])
@@ -39,12 +38,8 @@ void print_all(const char * const format, ...)
 				case 's':
 					s = va_arg(all, char *);
 					if (!s)
-					{
 						s = "(nil)";
-					}
-
 					printf("%s", s);
-					
 					break;
 				default:
 					cntr++;
