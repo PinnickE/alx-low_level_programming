@@ -24,24 +24,25 @@ void print_all(const char * const format, ...)
 			switch (format[cntr])
 			{
 				case 'c':
-					printf("%c, ", va_arg(all, int));
+					printf("%c", va_arg(all, int));
 					break;
 
 				case 'i':
-					printf("%d, ", va_arg(all, int));
+					printf("%d", va_arg(all, int));
 					break;
 
 				case 'f':
-					printf("%f, ", va_arg(all, double));
+					printf("%f", va_arg(all, double));
 					break;
 
 				case 's':
-					printf("%s, ", va_arg(all, char *));
+					printf("%s", va_arg(all, char *));
 					break;
 				default:
 					cntr++;
 					continue;
 			}
+			printf(", ");
 			cntr++;
 		}
 	}
