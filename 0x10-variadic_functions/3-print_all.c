@@ -14,6 +14,7 @@ void print_all(const char * const format, ...)
 {
 	va_list all;
 	int cntr = 0;
+	char *s;
 
 	va_start(all, format);
 
@@ -36,11 +37,14 @@ void print_all(const char * const format, ...)
 					break;
 
 				case 's':
-					if (va_arg(all, char *) == NULL)
+					s = va_arg(all, char *);
+					if (!s)
 					{
-						prinft("(nil)");
+						s = "(nil)";
 					}
-					printf("%s", va_arg(all, char *));
+
+					printf("%s", s);
+					
 					break;
 				default:
 					cntr++;
