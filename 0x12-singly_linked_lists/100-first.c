@@ -1,15 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
+
+void printFirst(void) __attribute__ ((constructor));
 
 /**
- * printFirst - Use constructor attribute to delay execution of main
- */
-void prntFirst(void) __attribute__ ((constructor));
-
-/**
- * printFirst - Run function
+ * printFirst - Execute before main function is executed
  */
 void printFirst(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
 }
+
